@@ -36,7 +36,7 @@ This platform is ideal for bloggers and admins, providing features like personal
 
 # Backend server setup and how to running
 
-## step-1: initialize npm and setup basic express server
+## Step-1: initialize npm and setup basic express server
 
 ### Initialize node package manager(NPM) with default input
 
@@ -78,7 +78,7 @@ src
 npm i --save-dev @types/cors @types/node @types/express/http-status
 ```
 
-# step-2: initialize typescript with related package
+# Step-2: initialize typescript with related package
 
 ### Install typescript developer dependency
 
@@ -105,7 +105,7 @@ tsc --init
 npm install -D ts-node-dev
 ```
 
-# step-3: install mongoose and connect with project and .env code add
+# Step-3: install mongoose and connect with database_uri from mongodb cluster
 
 ### Install mongoose
 
@@ -135,7 +135,7 @@ async function main() {
 main();
 ```
 
-# step-4: install eslint and prettier for typescript
+# Step-4: install eslint and prettier for typescript
 
 ### Install all package related eslint and prettier for typescript as developer dependency
 
@@ -199,7 +199,7 @@ node_modules;
 dist;
 ```
 
-# step-5: Configuration the package.json with script
+# Step-5: Configuration the package.json with script
 
 ### Main destination change that
 
@@ -223,27 +223,27 @@ dist;
   },
 ```
 
-# step-6: Run project locally
+# Step-6: Run project locally
 
 ### Prerequisites:
 Node.js (v14.x or higher)
 MongoDB (local or cloud instance)
 
 
-### step-6.1 Clone the repository
+### Step-6.1 Clone the repository
 
 ```javascript
  https://github.com/ZakiaSultana4/BlogBuilder-A3.git
 
 ```
 
-### step-6.2 Make a folder called BlogBuilder:
+### Step-6.2 Make a folder called BlogBuilder:
 
 ```javascript
 cd BlogBuilder 
 ```
 
-### step-6.3 Create a .env file with the following:
+### Step-6.3 Create a .env file with the following:
 
 ```javascript
   DB_URL=<DB_URL>
@@ -255,42 +255,42 @@ cd BlogBuilder
   JWT_ACCESS_EXPIRES_IN=<JWT_ACCESS_EXPIRES_IN>
   JWT_REFRESH_EXPIRES_IN=<JWT_REFRESH_EXPIRES_IN>
 ```
-### step-6.4 Install dependencies:
+### Step-6.4 Install dependencies:
 
 ```javascript
 npm install 
 ```
 
-### step-6.5 Run eslint:
+### Step-6.5 Run eslint:
 
 ```javascript
 npm run lint
 ```
 
-### step-6.6 Run prettier:
+### Step-6.6 Run prettier:
 
 ```javascript
 npm run format
 ```
 
-### step-6.7 Build project:
+### Step-6.7 Build project:
 
 ```javascript
 npm run build
 ```
 
-### step-6.8 Run javascript file:
+### Step-6.8 Run javascript file:
 
 ```javascript
 npm run start:prod
 ```
 
-### step-6.9 Run locally typescript file:
+### Step-6.9 Run locally typescript file:
 
 ```javascript
 npm run start:dev
 ```
-### step-6.10 Access the application:
+### Step-6.10 Access the application:
 
 ```javascript
 http://localhost:5000
